@@ -199,15 +199,8 @@ export default function Header() {
     <Navbar className="mx-auto w-full p-2 bg-black lg:pl-6">
       <div className="relative mx-auto flex items-center text-blue-gray-900 text-white">
       <img style={{width:'100px'}} src={logo} alt="logo" className=""/>
-        {/* <Typography
-          as="a"
-          href="/"
-          className="mr-4 ml-2 cursor-pointer py-1.5 font-medium"
-        >
-          <image src={logo} alt="logo"/>
-          <h4>Hello</h4>
-        </Typography> */}
-        <div className="absolute top-2/4 left-2/4 hidden -translate-x-2/4 -translate-y-2/4 lg:block">
+        
+        <div className="absolute md:left-[350px] top-2/4 left-2/4 hidden -translate-x-2/4 -translate-y-2/4 lg:block">
           <NavList />
         </div>
         <IconButton
