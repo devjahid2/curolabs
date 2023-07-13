@@ -78,9 +78,9 @@ const Calender = () => {
             <Typography className="text-[20px] font-[600]">Calendar</Typography>
             <Typography className="text-[20px] font-[600]">July 2023</Typography>
             <div className="flex items-center gap-2">
-                <BsArrowLeftCircle/>
+                <BsArrowLeftCircle className='cursor-pointer'/>
                 <Typography className="rounded bg-[#00D880] text-[14px] text-white p-[1px] px-2">Today</Typography>
-                <BsArrowRightCircle/>
+                <BsArrowRightCircle className='cursor-pointer'/>
             </div>
         </div>
       <table className="w-full min-w-max table-auto text-left border-collapse border border-slate-500">
@@ -102,7 +102,7 @@ const Calender = () => {
         <tbody>
           {TABLE_ROWS.map(({ time1, time2, time3,time4,time5,time6,time7 }, index) => {
             const isLast = index === TABLE_ROWS.length - 1;
-            const classes = isLast ? "p-4 border border-[rgba(0,0,0,0.1)]" : "p-4 border-b border-blue-gray-50 border border-[rgba(0,0,0,0.1)]";
+            const classes = isLast ? "p-4 border border-[rgba(0,0,0,0.1)] " : "p-4 border-b border-blue-gray-50 border border-[rgba(0,0,0,0.1)]";
  
             return (
               <tr key={index}>
