@@ -31,7 +31,7 @@ const Performance = () => {
   //     console.log(dirCandle,value)
   // }
   return (
-    <div className="card shadow rounded-lg bg-white p-3 performance">
+    <div className="card shadow rounded-lg bg-white p-3 performance h-[100%]">
       <h2 className="mb-5">Performance By Instrument</h2>
 
       {/* {data.map((value, index) => {

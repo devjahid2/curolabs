@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Navbar,
   MobileNav,
@@ -150,20 +150,18 @@ function NavListMenu() {
 // nav list component
 const navListItems = [
   {
+    label: "Trade",
+  },
+  {
+    label: "Dashboard",
+  },
+  {
     label: "Account",
-    icon: UserCircleIcon,
-  },
-  {
-    label: "Blocks",
-    icon: CubeTransparentIcon,
-  },
-  {
-    label: "Docs",
-    icon: CodeBracketSquareIcon,
   },
 ];
  
 function NavList() {
+  const [route,setRoute] =useState('Dashboard')
   return (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
       <NavListMenu />
@@ -174,10 +172,10 @@ function NavList() {
           href="#"
           variant="small"
           color="blue-gray"
-          className="font-normal"
+          className="font-normal nav-menu-list"
         >
-          <MenuItem className="flex items-center gap-2 lg:rounded-full">
-            {React.createElement(icon, { className: "h-[18px] w-[18px]" })}{" "}
+          <MenuItem className={`flex items-center gap-2 text-white ${route===label?'active':''}`}>
+
             {label}
           </MenuItem>
         </Typography>
@@ -223,8 +221,8 @@ export default function Header() {
         </IconButton>
         <ProfileMenu />
       </div>
-      <MobileNav open={isNavOpen} className="overflow-scroll">
-        <NavList />
+      <MobileNav open={isNavOpen} className="overflow-scroll rounded-none">
+        <NavList className="rounded-none" />
       </MobileNav>
     </Navbar>
   );
