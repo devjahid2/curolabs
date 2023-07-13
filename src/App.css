@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+    /* --main-color:#f7961d; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{padding: 0;margin: 0;font-family: Arial, Helvetica, sans-serif;font-family: 'Poppins', sans-serif !important;}
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+img{
+    width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+a{
+    text-decoration: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+    color: #000000;
+    background-color: #f7f8fd;
+}
+.overview .text{
+    font-size: 20px;
+    color: #000000;
+}
+.overview .value{
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+}
+/* .apexcharts-legend.apexcharts-align-center.apx-legend-position-bottom{
+    position: absolute;
+    top: 0 !important;
+    right: 0 !important;
+} */
+.performance .profit{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.border-top-bottom{
+    width: 5px;
+    background-color:#EBEBEB;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
 }
