@@ -82,13 +82,13 @@ const Calender = () => {
     return (
         <Card className="overflow-scroll h-full w-full">
         <div className="flex items-center justify-between p-3">
-            <Typography className="text-[20px] font-[600]">Calendar</Typography>
-            <Typography className="text-[20px] font-[600]">July 2023</Typography>
+            <Typography className="text-[20px] font-[600] mb-[-67px]">Calendar</Typography>
+            {/* <Typography className="text-[20px] font-[600]">July 2023</Typography>
             <div className="flex items-center gap-2">
                 <BsArrowLeftCircle className='cursor-pointer'/>
                 <Typography className="rounded bg-[#00D880] text-[14px] text-white p-[1px] px-2">Today</Typography>
                 <BsArrowRightCircle className='cursor-pointer'/>
-            </div>
+            </div> */}
         </div>
         <Calendar
           // events={this.state.events}

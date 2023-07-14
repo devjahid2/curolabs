@@ -53,3 +53,21 @@ body{
     background-color: transparent;
     color: #00D880;
 }
+.rbc-toolbar-label{
+    font-size: 20px;
+    font-weight: 600;
+}
+.rbc-btn-group:last-child{
+    display: none !important;
+}
+.rbc-btn-group:first-child button:nth-child(2){
+    position: absolute;
+    left: -71px;
+}
+.rbc-btn-group:first-child{
+    position: relative;
+}
+.rbc-toolbar{
+    flex-direction: row-reverse;
+    align-items: center;
+}
