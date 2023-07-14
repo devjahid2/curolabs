@@ -87,8 +87,18 @@ body{
     position: relative;
     left: -20px;
     top: 0px;
+    background-color: #00D880;
+    border-radius: 20px !important;
+    color: #fff;
     
+    font-size: 14px;
 }
+.rbc-btn-group button:first-child:hover{
+
+    background-color: #00D880 !important;
+    color: #fff !important;
+}
+
 .rbc-toolbar button:hover {
     color: #373a3c;
     background-color: transparent !important;

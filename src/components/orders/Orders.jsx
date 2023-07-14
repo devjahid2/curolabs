@@ -146,7 +146,7 @@ const Orders = () => {
                   : "p-4 border-b border-blue-gray-50";
 
                 return (
-                  <tr key={name}>
+                  <tr key={index}>
                     <td className={classes}>
                       <Typography
                         variant="small"
