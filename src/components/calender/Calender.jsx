@@ -81,8 +81,8 @@ const localizer = momentLocalizer(moment)
 const Calender = () => {
     return (
         <Card className="overflow-scroll h-full w-full">
-        <div className="flex items-center justify-between p-3">
-            <Typography className="text-[20px] font-[600] mb-[-67px]">Calendar</Typography>
+        <div className="flex items-center justify-between px-3 pt-2">
+            <Typography className="text-[20px] font-[600] mb-[-37px]">Calendar</Typography>
             {/* <Typography className="text-[20px] font-[600]">July 2023</Typography>
             <div className="flex items-center gap-2">
                 <BsArrowLeftCircle className='cursor-pointer'/>
