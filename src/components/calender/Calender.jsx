@@ -12,7 +12,7 @@ const localizer = momentLocalizer(moment)
 
 const Calender = () => {
     return (
-        <Card className="overflow-scroll h-full w-full">
+        <Card className="overflow-scroll h-full w-full no-scroll p-[10px]">
         <div className="flex items-center justify-between px-3 pt-2">
             <Typography className="text-[20px] font-[600] mb-[-37px]">Calendar</Typography>
             

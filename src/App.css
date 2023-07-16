@@ -48,6 +48,14 @@ body{
 }
 .orders p.active,.nav-menu-list button.active{
     color: #00D880;
+    position: relative;
+}
+.orders p.active::before{
+    border-bottom: 3px solid #00D880;
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: -7px;
 }
 .nav-menu-list button:hover{
     background-color: transparent;
@@ -124,4 +132,23 @@ body{
     width: 30px;
     height: 30px;
     font-size: 1px;
+}
+
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scroll {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+.table-scroll::-webkit-scrollbar {
+  width: 7px;
+}
+.table-scroll::-webkit-scrollbar-track {
+  background: hsla(155, 100%, 37%, 0.342);
+}
+.table-scroll::-webkit-scrollbar-thumb {
+  background: #00BC6F;
+  border-radius: 5px;
 }

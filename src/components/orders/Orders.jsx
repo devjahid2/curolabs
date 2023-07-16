@@ -75,17 +75,53 @@ const TABLE_ROWS = [
     fees: "-$18.72",
     pl: "+$84.65",
   },
+  {
+    date: "29-04-2023",
+    symbol: "AUD/USD",
+    position: "Long",
+    entry: "0.66220",
+    size: "0.25",
+    tp: "0.66350",
+    sl: "0.66200",
+    liq: "N/A",
+    fees: "-$18.72",
+    pl: "+$84.65",
+  },
+  {
+    date: "29-04-2023",
+    symbol: "AUD/USD",
+    position: "Long",
+    entry: "0.66220",
+    size: "0.25",
+    tp: "0.66350",
+    sl: "0.66200",
+    liq: "N/A",
+    fees: "-$18.72",
+    pl: "+$84.65",
+  },
+  {
+    date: "29-04-2023",
+    symbol: "AUD/USD",
+    position: "Long",
+    entry: "0.66220",
+    size: "0.25",
+    tp: "0.66350",
+    sl: "0.66200",
+    liq: "N/A",
+    fees: "-$18.72",
+    pl: "+$84.65",
+  },
 ];
 
 const Orders = () => {
   const [tableData, setTableData] = useState("position");
   return (
     <div className="container mx-auto mt-8 orders">
-      <Card className="overflow-scroll h-full w-full">
-        <div className="flex gap-2 p-3 pb-1">
+      <Card className="overflow-scroll h-full w-full no-scroll">
+        <div className="flex gap-10 p-3 pb-1">
           <Typography
             onClick={() => setTableData("position")}
-            className={`text-[18px] font-[500] cursor-pointer ${
+            className={`text-[18px] font-[500] cursor-pointer pb-2 ${
               tableData === "position" ? "active" : ""
             }`}
           >
@@ -93,7 +129,7 @@ const Orders = () => {
           </Typography>
           <Typography
             onClick={() => setTableData("history")}
-            className={`text-[18px] font-[500] cursor-pointer ${
+            className={`text-[18px] font-[500] cursor-pointer pb-2 ${
               tableData === "history" ? "active" : ""
             }`}
           >
@@ -103,6 +139,7 @@ const Orders = () => {
         <hr className="p-[1px] bg-[rgba(0,0,0,0.1)] mb-5" />
         {
           tableData === 'position' ? 
+          <Card className="h-[350px] overflow-y-scroll table-scroll">
           <table className="w-full min-w-max table-auto text-left">
           <thead>
             <tr>
@@ -243,6 +280,7 @@ const Orders = () => {
             )}
           </tbody>
         </table>
+          </Card>
           :
           <Card>
             <CardBody>
