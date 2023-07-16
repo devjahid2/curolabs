@@ -63,6 +63,19 @@ const Overview = () => {
                 </CardBody>
 
             </Card>
+
+            <Card className='w-full md:mb-0 mb-3 shadow-lg'>
+                <CardBody className='flex items-center gap-5'>
+                    <div className="icons bg-[rgba(116,103,255,0.22)] rounded-full p-2">
+                    <AiOutlineStar color='#7367FF' size={30}/>
+                    </div>
+                    <div>
+                    <Typography className="text">“Equity</Typography>
+                    <Typography className="value">$125,000</Typography>
+                    </div>
+                </CardBody>
+
+            </Card>
             
             
         </div>

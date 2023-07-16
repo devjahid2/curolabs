@@ -52,99 +52,233 @@ const Performance = () => {
           </div>
         );
       })} */}
-      <div className="flex flex-col relative">
+      <div className="flex flex-col relative overflow-y-scroll table-scroll h-[550px]">
+        <div className="border-top-bottom"></div>
 
-      <div className="border-top-bottom"></div>
+        <div className="flex items-center self-center w-[71%] mb-3">
+          <div className={` w-[50%] rounded-lg`}>
+            <Typography className="text-start text-[16px]">+${800}</Typography>
+            <div
+              className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}
+            >
+              USD
+            </div>
+          </div>
+          <div className={` w-[50%] rounded-lg`}>
+            <Typography className="text-end text-[16px]">-${800}</Typography>
+            <div
+              className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}
+            >
+              JPY
+            </div>
+          </div>
+        </div>
 
-      <div className="flex items-center self-center w-[71%] mb-3">
-      <div className={` w-[50%] rounded-lg`}>
-              <Typography className="text-start text-[16px]">+${800}</Typography>
-              <div className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}>
-                USD
-              </div>
+        <div className="flex items-center self-end w-[71%] mb-3 relative">
+          <div className={` w-[30%] rounded-lg`}>
+            <Typography className="text-start text-[16px]">+${800}</Typography>
+            <div
+              className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}
+            >
+              USD
             </div>
-      <div className={` w-[50%] rounded-lg`}>
-              <Typography className="text-end text-[16px]">-${800}</Typography>
-              <div className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}>
-                JPY
-              </div>
+          </div>
+          <div className={` w-[70%] rounded-lg`}>
+            <Typography className="text-end text-[16px]">-${800}</Typography>
+            <div
+              className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}
+            >
+              JPY
             </div>
-      </div>
+          </div>
+        </div>
+        <div className="flex items-center self-center w-[71%] mb-3">
+          <div className={` w-[50%] rounded-lg`}>
+            <Typography className="text-start text-[16px]">+${800}</Typography>
+            <div
+              className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}
+            >
+              USD
+            </div>
+          </div>
+          <div className={` w-[50%] rounded-lg`}>
+            <Typography className="text-end text-[16px]">-${800}</Typography>
+            <div
+              className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}
+            >
+              JPY
+            </div>
+          </div>
+        </div>
 
-      <div className="flex items-center self-end w-[71%] mb-3 relative">
-      <div className={` w-[30%] rounded-lg`}>
-              <Typography className="text-start text-[16px]">+${800}</Typography>
-              <div className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}>
-                USD
-              </div>
+        <div className="flex items-center self-end w-[71%] mb-3 relative">
+          <div className={` w-[30%] rounded-lg`}>
+            <Typography className="text-start text-[16px]">+${800}</Typography>
+            <div
+              className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}
+            >
+              USD
             </div>
-      <div className={` w-[70%] rounded-lg`}>
-              <Typography className="text-end text-[16px]">-${800}</Typography>
-              <div className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}>
-                JPY
-              </div>
+          </div>
+          <div className={` w-[70%] rounded-lg`}>
+            <Typography className="text-end text-[16px]">-${800}</Typography>
+            <div
+              className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}
+            >
+              JPY
             </div>
-      </div>
-      <div className="flex self-start items-center w-[84%] mb-3 ">
-      <div className={` w-[60%] rounded-lg`}>
-              <Typography className="text-start text-[16px]">+${800}</Typography>
-              <div className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}>
-                USD
-              </div>
+          </div>
+        </div>
+        <div className="flex self-start items-center w-[84%] mb-3 ">
+          <div className={` w-[60%] rounded-lg`}>
+            <Typography className="text-start text-[16px]">+${800}</Typography>
+            <div
+              className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}
+            >
+              USD
             </div>
-      <div className={` w-[40%] rounded-lg`}>
-              <Typography className="text-end text-[16px]">-${800}</Typography>
-              <div className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}>
-                JPY
-              </div>
-            </div>
-      </div>
-      <div className="flex items-center self-center w-[71%] mb-3">
-      <div className={` w-[50%] rounded-lg`}>
-              <Typography className="text-start text-[16px]">+${800}</Typography>
-              <div className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}>
-                USD
-              </div>
-            </div>
-      <div className={` w-[50%] rounded-lg`}>
-              <Typography className="text-end text-[16px]">-${800}</Typography>
-              <div className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}>
-                JPY
-              </div>
-            </div>
-      </div>
+          </div>
 
-      <div className="flex items-center self-end w-[71%] mb-3 relative">
-      <div className={` w-[30%] rounded-lg`}>
-              <Typography className="text-start text-[16px]">+${800}</Typography>
-              <div className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}>
-                USD
-              </div>
+          <div className={` w-[40%] rounded-lg`}>
+            <Typography className="text-end text-[16px]">-${800}</Typography>
+            <div
+              className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}
+            >
+              JPY
             </div>
-      <div className={` w-[70%] rounded-lg`}>
-              <Typography className="text-end text-[16px]">-${800}</Typography>
-              <div className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}>
-                JPY
-              </div>
+          </div>
+        </div>
+        <div className="flex items-center self-center w-[71%] mb-3">
+          <div className={` w-[50%] rounded-lg`}>
+            <Typography className="text-start text-[16px]">+${800}</Typography>
+            <div
+              className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}
+            >
+              USD
             </div>
-      </div>
-      <div className="flex self-start items-center w-[84%] mb-3 ">
-      <div className={` w-[60%] rounded-lg`}>
-              <Typography className="text-start text-[16px]">+${800}</Typography>
-              <div className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}>
-                USD
-              </div>
+          </div>
+          <div className={` w-[50%] rounded-lg`}>
+            <Typography className="text-end text-[16px]">-${800}</Typography>
+            <div
+              className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}
+            >
+              JPY
             </div>
-      <div className={` w-[40%] rounded-lg`}>
-              <Typography className="text-end text-[16px]">-${800}</Typography>
-              <div className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}>
-                JPY
-              </div>
-            </div>
-      </div>
+          </div>
+        </div>
 
-      </div>
+        <div className="flex items-center self-end w-[71%] mb-3 relative">
+          <div className={` w-[30%] rounded-lg `}>
+            <Typography className="text-start text-[16px]">+${800}</Typography>
+            <div
+              className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}
+            >
+              USD
+            </div>
+          </div>
+          <div className={` w-[70%] rounded-lg`}>
+            <Typography className="text-end text-[16px]">-${800}</Typography>
+            <div
+              className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}
+            >
+              JPY
+            </div>
+          </div>
+        </div>
+        <div className="flex self-start items-center w-[84%] mb-3 ">
+          <div className={` w-[60%] rounded-lg`}>
+            <Typography className="text-start text-[16px]">+${800}</Typography>
+            <div
+              className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}
+            >
+              USD
+            </div>
+          </div>
 
+          <div className={` w-[40%] rounded-lg`}>
+            <Typography className="text-end text-[16px]">-${800}</Typography>
+            <div
+              className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}
+            >
+              JPY
+            </div>
+          </div>
+        </div>
+        <div className="flex self-start items-center w-[84%] mb-3 ">
+          <div className={` w-[60%] rounded-lg`}>
+            <Typography className="text-start text-[16px]">+${800}</Typography>
+            <div
+              className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}
+            >
+              USD
+            </div>
+          </div>
+          <div className={` w-[40%] rounded-lg`}>
+            <Typography className="text-end text-[16px]">-${800}</Typography>
+            <div
+              className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}
+            >
+              JPY
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center self-center w-[71%] mb-3">
+          <div className={` w-[50%] rounded-lg`}>
+            <Typography className="text-start text-[16px]">+${800}</Typography>
+            <div
+              className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}
+            >
+              USD
+            </div>
+          </div>
+          <div className={` w-[50%] rounded-lg`}>
+            <Typography className="text-end text-[16px]">-${800}</Typography>
+            <div
+              className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}
+            >
+              JPY
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-center self-end w-[71%] mb-3 relative">
+          <div className={` w-[30%] rounded-lg`}>
+            <Typography className="text-start text-[16px]">+${800}</Typography>
+            <div
+              className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}
+            >
+              USD
+            </div>
+          </div>
+          <div className={` w-[70%] rounded-lg`}>
+            <Typography className="text-end text-[16px]">-${800}</Typography>
+            <div
+              className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}
+            >
+              JPY
+            </div>
+          </div>
+        </div>
+        <div className="flex self-start items-center w-[84%] mb-3 ">
+          <div className={` w-[60%] rounded-lg`}>
+            <Typography className="text-start text-[16px]">+${800}</Typography>
+            <div
+              className={`bg-[#00F496]  p-1 w-full text-[14px] font-[600] rounded profit`}
+            >
+              USD
+            </div>
+          </div>
+
+          <div className={` w-[40%] rounded-lg`}>
+            <Typography className="text-end text-[16px]">-${800}</Typography>
+            <div
+              className={`bg-[#FF3737] p-1 w-full  text-[14px] font-[600] rounded loss`}
+            >
+              JPY
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

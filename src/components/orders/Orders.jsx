@@ -117,7 +117,7 @@ const Orders = () => {
   const [tableData, setTableData] = useState("position");
   return (
     <div className="container mx-auto mt-8 orders">
-      <Card className="overflow-scroll h-full w-full no-scroll">
+      <Card className="overflow-scroll h-full w-full no-scroll pb-3">
         <div className="flex gap-10 p-3 pb-1">
           <Typography
             onClick={() => setTableData("position")}
@@ -136,10 +136,12 @@ const Orders = () => {
             Order History
           </Typography>
         </div>
+        <div className="p-3 py-0">
         <hr className="p-[1px] bg-[rgba(0,0,0,0.1)] mb-5" />
+        </div>
         {
           tableData === 'position' ? 
-          <Card className="h-[350px] overflow-y-scroll table-scroll">
+          <Card className="h-[350px] overflow-y-scroll shadow-none table-scroll">
           <table className="w-full min-w-max table-auto text-left">
           <thead>
             <tr>
@@ -282,8 +284,8 @@ const Orders = () => {
         </table>
           </Card>
           :
-          <Card>
-            <CardBody>
+          <Card className="shadow-none ">
+            <CardBody className="pt-3">
               <Typography>No Data Available in Order History</Typography>
             </CardBody>
           </Card>
